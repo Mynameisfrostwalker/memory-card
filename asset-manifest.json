@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/memory-card/static/css/main.710a28e9.chunk.css",
+    "main.js": "/memory-card/static/js/main.3f3b37ef.chunk.js",
+    "main.js.map": "/memory-card/static/js/main.3f3b37ef.chunk.js.map",
+    "runtime-main.js": "/memory-card/static/js/runtime-main.73480ed4.js",
+    "runtime-main.js.map": "/memory-card/static/js/runtime-main.73480ed4.js.map",
+    "static/js/2.0b85c7cb.chunk.js": "/memory-card/static/js/2.0b85c7cb.chunk.js",
+    "static/js/2.0b85c7cb.chunk.js.map": "/memory-card/static/js/2.0b85c7cb.chunk.js.map",
+    "index.html": "/memory-card/index.html",
+    "static/css/main.710a28e9.chunk.css.map": "/memory-card/static/css/main.710a28e9.chunk.css.map",
+    "static/js/2.0b85c7cb.chunk.js.LICENSE.txt": "/memory-card/static/js/2.0b85c7cb.chunk.js.LICENSE.txt",
+    "static/media/Deku.625fe129.jpeg": "/memory-card/static/media/Deku.625fe129.jpeg",
+    "static/media/Emma.9f985c36.webp": "/memory-card/static/media/Emma.9f985c36.webp",
+    "static/media/index.css": "/memory-card/static/media/Ephesis-Regular.63de1feb.ttf",
+    "static/media/L.efe82c7a.webp": "/memory-card/static/media/L.efe82c7a.webp",
+    "static/media/Meliodas.6ce92ac0.jpg": "/memory-card/static/media/Meliodas.6ce92ac0.jpg",
+    "static/media/Saitama.986d5cbc.png": "/memory-card/static/media/Saitama.986d5cbc.png",
+    "static/media/Yumeko.6614898a.jpg": "/memory-card/static/media/Yumeko.6614898a.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.73480ed4.js",
+    "static/js/2.0b85c7cb.chunk.js",
+    "static/css/main.710a28e9.chunk.css",
+    "static/js/main.3f3b37ef.chunk.js"
+  ]
+}

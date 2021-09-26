@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import uniqid from "uniqid";
 import Card from "./Card";
 import Scoreboard from "./Scoreboard";
@@ -34,6 +34,22 @@ const Main = () => {
 
   const [score, setScore] = useState(0);
 
+  useEffect(() => {
+    const clone = [...cardInfo];
+    let currentIndex = clone.length;
+
+    while (currentIndex > 0) {
+      const randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
+
+      [clone[currentIndex], clone[randomIndex]] = [
+        clone[randomIndex],
+        clone[currentIndex],
+      ];
+    }
+    setCardInfo(clone);
+  }, []);
+
   const handleClick = (e) => {
     const clone = [...cardInfo];
     const value = clone.every((card) => card[2] === true);
@@ -63,18 +79,16 @@ const Main = () => {
 
     clone[index][2] = true;
 
-    if (!value) {
-      let currentIndex = clone.length;
+    let currentIndex = clone.length;
 
-      while (currentIndex > 0) {
-        const randomIndex = Math.floor(Math.random() * currentIndex);
-        currentIndex -= 1;
+    while (currentIndex > 0) {
+      const randomIndex = Math.floor(Math.random() * currentIndex);
+      currentIndex -= 1;
 
-        [clone[currentIndex], clone[randomIndex]] = [
-          clone[randomIndex],
-          clone[currentIndex],
-        ];
-      }
+      [clone[currentIndex], clone[randomIndex]] = [
+        clone[randomIndex],
+        clone[currentIndex],
+      ];
     }
     setCardInfo(clone);
     setScore(select ? score + 1 : 0);
